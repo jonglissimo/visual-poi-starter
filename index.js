@@ -25,7 +25,7 @@ VisualPoiStarter.prototype.findPois = function(callback) {
 
     if (that.portList.length == 0) console.log('No visual poi found');
 
-    callback(that.portList);
+    if (callback) callback(that.portList);
   });
 };
 
