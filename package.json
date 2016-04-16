@@ -1,6 +1,6 @@
 {
   "name": "visual-poi-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Start Pyroterra Lighttoys Visual Poi through USB (serial port)",
   "main": "index.js",
   "scripts": {
