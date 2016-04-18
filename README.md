@@ -33,10 +33,9 @@ Usage in your code
 ------------------
 
 ```
-var VisualPoiStarter = require('visual-poi-starter');
-var visualPoiStarter = new VisualPoiStarter();
+var poiStarter = require('visual-poi-starter');
 
-visualPoiStarter.findPois(function() {
-  visualPoiStarter.startSequence(1); // start sequence 1
+poiStarter.findPois(function() {
+  poiStarter.startSequence(1); // start sequence 1
 });
 ```

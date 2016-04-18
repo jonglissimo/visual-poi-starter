@@ -49,4 +49,4 @@ VisualPoiStarter.prototype._write = function (no) {
   }
 }
 
-module.exports = VisualPoiStarter;
+module.exports = new VisualPoiStarter();

@@ -1,6 +1,5 @@
 var inquirer = require('inquirer');
-var VisualPoiStarter = require('./index.js');
-var visualPoiStarter = new VisualPoiStarter();
+var visualPoiStarter = require('./index.js');
 
 visualPoiStarter.findPois(function() {
   askCommand();
