@@ -1,7 +1,6 @@
-var serialport = require('serialport');
-var SerialPort = require('serialport').SerialPort;
-var vendorId = '0x1669';  // Pyroterra Lighttoys
-var productId = '0x1026'; // Visual Poi 80px
+var SerialPort = require('serialport');
+var vendorId = '1669';  // Pyroterra Lighttoys
+var productId = '1026'; // Visual Poi 80px
 
 function VisualPoiStarter() {
   this.portList = [];
@@ -11,7 +10,7 @@ VisualPoiStarter.prototype.findPois = function(callback) {
   this.portList = [];
   var that = this;
 
-  serialport.list(function (err, ports) {
+  SerialPort.list(function (err, ports) {
     ports.forEach(function(port) {
       var currentVendorId = port.vendorId;
       var currentProductId = port.productId;
